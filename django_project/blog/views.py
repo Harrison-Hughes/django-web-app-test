@@ -20,7 +20,7 @@ def home(request):
     context = {
         'posts': posts
     }
-    return render(request, 'blog/home.html', posts)
+    return render(request, 'blog/home.html', {'posts': posts})
 
 
 def about(request):
